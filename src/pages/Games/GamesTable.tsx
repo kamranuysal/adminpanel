@@ -27,6 +27,7 @@ const GamesTable = (): React.ReactElement => {
       showSearchDrawer={true}
       filters={filters}
       additionalButtons={additionalButtons}
+      fetchData={() => {}}
     />
   );
 };
