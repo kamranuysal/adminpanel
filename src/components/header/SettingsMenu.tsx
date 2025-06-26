@@ -7,6 +7,7 @@ import {
   Typography,
 } from "@mui/material";
 import useSettingsMenu from "./hooks/useSettingsMenu";
+import { logOut } from "components/auth/AuthBox";
 
 const SettingsMenu = (): React.ReactElement => {
   const { anchorEl, handleClick, handleClose } = useSettingsMenu();
@@ -38,7 +39,7 @@ const SettingsMenu = (): React.ReactElement => {
         transformOrigin={{ horizontal: "right", vertical: "top" }}
         anchorOrigin={{ horizontal: "right", vertical: "bottom" }}
       >
-        <MenuItem>Logout</MenuItem>
+        <MenuItem onClick={logOut}>Logout</MenuItem>
       </Menu>
     </>
   );

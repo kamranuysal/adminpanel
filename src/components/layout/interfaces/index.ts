@@ -7,3 +7,7 @@ export interface IUseAppLayout {
   handleDrawerOpen: () => void;
   handleDrawerClose: () => void;
 }
+
+export interface IAuthLayout {
+  children: any;
+}

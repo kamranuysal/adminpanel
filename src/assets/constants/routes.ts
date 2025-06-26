@@ -3,3 +3,7 @@ export const routes = {
   users: "/users",
   games: "/games",
 };
+
+export const allowedRoutes = {
+  login: "/login",
+};
